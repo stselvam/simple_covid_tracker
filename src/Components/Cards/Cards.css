@@ -1,0 +1,26 @@
+.cards___container {
+  margin: 50px 0;
+}
+
+.cards___container > .MuiGrid-container > .card {
+  margin: 0 2% !important;
+}
+
+.cards___container > .MuiGrid-container > .card.infected {
+  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.cards___container > .MuiGrid-container > .card.recovered {
+  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+.cards___container > .MuiGrid-container > .card.deaths {
+  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 770px) {
+  .cards___container > .MuiGrid-container > .card {
+    margin: 2% 0 !important;
+  }
+}
+/*# sourceMappingURL=Cards.css.map */

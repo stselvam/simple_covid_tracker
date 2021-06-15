@@ -1,0 +1,77 @@
+.app___container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app___container > .app__logo {
+  height: 120px;
+  width: 120px;
+  -webkit-animation: logo___animate___default 5s linear infinite;
+  animation: logo___animate___default 5s linear infinite;
+  -webkit-perspective: 100px;
+          perspective: 100px;
+}
+
+@-webkit-keyframes logo___animate___default {
+  from {
+    -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(20px) rotate(-360deg);
+  }
+}
+
+@keyframes logo___animate___default {
+  from {
+    -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg);
+            transform: rotate(0deg) translateX(20px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(20px) rotate(-360deg);
+            transform: rotate(360deg) translateX(20px) rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes logo___animate___770px {
+  from {
+    -webkit-transform: rotate(0deg) translateX(4px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(4px) rotate(-360deg);
+  }
+}
+
+@keyframes logo___animate___770px {
+  from {
+    -webkit-transform: rotate(0deg) translateX(4px) rotate(0deg);
+            transform: rotate(0deg) translateX(4px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(4px) rotate(-360deg);
+            transform: rotate(360deg) translateX(4px) rotate(-360deg);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .app___container {
+    margin: 0 10%;
+  }
+  .app___container > .app__logo {
+    height: 120px;
+    width: 120px;
+    -webkit-animation: logo___animate___770px 5s linear infinite;
+    animation: logo___animate___770px 5s linear infinite;
+  }
+}
+/*# sourceMappingURL=App.css.map */
